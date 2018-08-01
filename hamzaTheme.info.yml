@@ -1,0 +1,19 @@
+name: HamzaTheme
+type: theme
+description: 'Test Test'
+core: 8.x
+libraries:
+  - hamzaTheme/global-css
+  - hamzaTheme/global-js
+regions:
+  content: 'Main Content'
+  header: 'Header'
+  footer: 'Footer'
+  sidebar: 'Sidebar'
+  main_navigation: 'Main Menu'
+  search : 'Search'
+  menu2: 'Menu 2'
+  images: 'Image Menu'
+  footer_menu: 'Footer Menu'
+  menu_footer2: 'Footer Menu 2'
+  articles: 'Page Articles'

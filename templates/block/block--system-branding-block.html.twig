@@ -1,0 +1,12 @@
+{% extends "block.html.twig" %}
+
+
+
+
+{% block content %}
+ 
+  {% if site_logo %}    
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-responsive mt-1" />
+  {% endif %}
+ 
+ {% endblock %}

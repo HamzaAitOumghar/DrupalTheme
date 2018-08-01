@@ -1,0 +1,14 @@
+ #superfish-menu2>li>a{
+
+/* color :#3399cc;
+padding-top: 32px;
+padding-bottom: 32px;
+ padding: 30px;
+ width: 130px; */
+ width: 180px;
+ height: 64px;
+ text-align: center;
+} 
+#superfish-menu2>li>ul{
+    margin-top: 20px;
+}
