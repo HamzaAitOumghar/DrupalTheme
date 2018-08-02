@@ -1,15 +1,15 @@
 {% include directory ~ '/partial/header.html.twig' %}
 
 
-<div class="container">
+<div class="container shadow p-2 mb-2 bg-white rounded">
 
   <div class="row">
 
-      <div class="col-md-8" style="border:2px solid red">
+      <div class="col-md-8">
                   {{page.images}}
 
          <div class="row">
-              <div class="col-5" style="border:2px solid red">
+              <div class="col-5">
                
                   <div class="card">
                     <div class="card-body">
@@ -28,7 +28,7 @@
                   </div>
 
               </div>
-              <div class="col-7 " style="border:2px solid blue">
+              <div class="col-7 " >
                 <ul class="nav nav-tabs">
                     <li class="nav-item" >
                       <a class="nav-link active" data-toggle="tab" href="#home" style="background-color:#B3DD59; color:white;font-weight:bold;width:140px;text-align:center;">Conseils en assurance</a>
@@ -65,17 +65,16 @@
          </div>
       
       </div>
-      <div class="col-md-4" style="border:2px solid red">
+      <div class="col-md-4">
             {{page.sidebar}}
       </div>
       
 
   </div>
 
-  
-
+</div>
+<div class="container shadow p-2 mb-2 bg-white rounded">
   {% if page.footer %}
       {% include directory ~ '/partial/footer.html.twig' %}
   {% endif %}
-
 </div>

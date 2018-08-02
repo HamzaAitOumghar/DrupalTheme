@@ -1,0 +1,23 @@
+
+{% include directory ~ '/partial/header.html.twig' %}
+
+<div class="container">
+
+
+
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+  </main>
+
+</div>{# /.layout-container #}
+
+<div class="container shadow p-2 mb-2 bg-white rounded">
+  {% if page.footer %}
+      {% include directory ~ '/partial/footer.html.twig' %}
+  {% endif %}
+</div>

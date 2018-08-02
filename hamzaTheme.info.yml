@@ -5,6 +5,8 @@ core: 8.x
 libraries:
   - hamzaTheme/global-css
   - hamzaTheme/global-js
+libraries-override:
+  core/jquery: hamzaTheme/jquery-custom
 regions:
   content: 'Main Content'
   header: 'Header'
