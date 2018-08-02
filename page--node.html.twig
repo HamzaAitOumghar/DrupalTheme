@@ -1,18 +1,18 @@
 
 {% include directory ~ '/partial/header.html.twig' %}
 
-<div class="container">
+<div class="container shadow p-3 mb-2 bg-white rounded mt-3">
 
+<div class="row">
+    
+    <div class="col-4">
+        <img src="{{base_path ~ directory}}/images/demmanderDevis.jpg" class="img-fluid rounded "/>
+    </div>
+    <div class="col-8">    {{ page.content }}</div>
+    
+</div>
 
-
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-  </main>
+  
 
 </div>{# /.layout-container #}
 
