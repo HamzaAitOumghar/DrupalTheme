@@ -1,0 +1,18 @@
+<article{{ attributes }}>
+    
+      <div class="shadow-sm bg-light rounded">
+            <nav  aria-label="breadcrumb">
+                {{ drupal_breadcrumb() }}
+            </nav>
+    </div>
+
+  <div{{ content_attributes.addClass('shadow-sm p-1 mt-1 bg-light rounded') }}>
+  
+    <h4{{ title_attributes.addClass('display-4  text-primary') }}>
+      {{ label }}
+    </h4>
+
+    {{ content }}
+  </div>
+
+</article>

@@ -1,0 +1,23 @@
+<article{{ attributes }}>
+
+  {% if not page %}
+    <h3{{ title_attributes.addClass('display-4') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h3>
+  {% endif %}
+  {# { title_suffix } #}
+
+  <div class="shadow-sm bg-light rounded">
+       <nav  aria-label="breadcrumb">
+             {{ drupal_breadcrumb() }}
+        </nav>
+  </div>
+
+  <div{{ content_attributes.addClass('shadow-sm p-1 mt-1 bg-light rounded') }}>
+       
+    
+    {{ content.body }}
+
+  </div>
+
+</article>

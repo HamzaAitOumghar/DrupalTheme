@@ -16,7 +16,7 @@
                       <h5 class="card-title">Mot du Président</h5>
                       <p class="card-text">Bienvenue sur le site d'AGMA , votre assureur conseil de référence !</p>
                     <div class="text-right">
-                      <a href="#" class="btn btn-primary"> <span class="oi oi-plus"></span> Lire plus</a>
+                      <a href="{{ drupal_url('node/44', {absolute: true}) }}" class="btn btn-primary"> <span class="oi oi-plus"></span> Lire plus</a>
                     </div>
                     </div>
                   </div>
@@ -24,7 +24,11 @@
                         <div class="card-header">Actualités</div>
                         <div class="card-body text-center">
                               {{page.articles}}
+                        <div class="text-right mt-2">
+                             <a href="{{ drupal_url('taxonomy/term/4', {absolute: true}) }}" class="btn btn-primary"> <span class="oi oi-plus"></span> Tous les articles</a>  
                         </div>
+                        </div>
+                        
                   </div>
 
               </div>
