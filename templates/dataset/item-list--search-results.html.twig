@@ -1,0 +1,14 @@
+{% if context.list_style %}
+  {%- set attributes = attributes.addClass('item-list__' ~ context.list_style) %}
+{% endif %}
+{% if items or empty %}
+  {%- if items -%}
+    <ul class="list-group">
+      {%- for item in items -%}
+        <li{{ item.attributes.addClass('list-group-item') }}>{{ item.value }}</li>
+      {%- endfor -%}
+    </ul>
+  {%- else -%}
+    <h3>Résultat introuvable </h3>
+    {%- endif -%}
+{%- endif %}

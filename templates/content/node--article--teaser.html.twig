@@ -1,0 +1,23 @@
+{% set date = node.createdtime|date("m/d/Y") %}
+<article{{ attributes }}>
+
+<div class="card mb-2">
+  <div class="card-header text-center">
+    <h6{{ title_attributes.addClass('display-4') }} style="font-size: 24px;">
+      {{ label }}
+    </h6>
+  </div>
+  <div{{ content_attributes.addClass('card-body') }}>
+        {{date}}
+       {{ content.body }}
+
+
+  </div>
+  <div class="card-footer">
+     <div class="text-right mr-1">
+        <a href="{{ url }}" class="btn bg-light"><span class="oi oi-document"></span> Voir l'actualité</a>
+    </div>
+  </div>
+</div>
+
+</article>
